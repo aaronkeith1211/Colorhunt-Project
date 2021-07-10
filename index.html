@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Hunt Game</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="menu-container" class="gradient-border">
+            <h1><span style="color: #f33;">C</span><span style="color: #3f3">o</span><span style="color: #33f">l</span><span style="color: #fd3">o</span><span style="color: #f3f">r</span> <span style="color: #3df">H</span><span style="color: #f33">u</span><span style="color: #3f3">n</span><span style="color: #33f">t</span></h1>
+            
+            <form id="menu">
+                <label for="level-dropdown">Selec Level</label>
+                <select name="level-dropdown" id="level-dropdown">
+                    <option value="1">First</option>
+                    <option value="2">Second</option>
+                    <option value="3">Third</option>
+                    <option value="4">Fourth</option>
+                    <option value="5">Fifth</option>
+                    <option value="6">Sixth</option>
+                    <option value="7">Seventh</option>
+                    <option value="8">Eighth</option>
+                </select>
+                <input type="submit" id="start-button" class="btn btn-primary" value="Start Game">
+            </form>
+        </div>
+
+        
+        <div id="board-container" class="gradient-border">
+            <h1><span style="color: #f33;">C</span><span style="color: #3f3">o</span><span style="color: #33f">l</span><span style="color: #fd3">o</span><span style="color: #f3f">r</span> <span style="color: #3df">H</span><span style="color: #f33">u</span><span style="color: #3f3">n</span><span style="color: #33f">t</span></h1>
+
+            <p>Level <span id="level">1</span></p>
+            <button id="change-level-button" class="btn btn-primary">Change Level</button>
+            <button id="restart-button" class="btn btn-primary">Restart</button>
+            <div id="game-progress">
+                <span class="label">Score</span><span id="score" class="value"></span>
+                <span class="label">Find Me</span><span id="find-letter" class="value"></span>
+                <span class="label">Timer</span><span id="timer" class="value"></span>
+            </div>
+            <table id="board"></table>
+            <p id="answer-status">Answer Status</p>
+        </div>
+    </div>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
